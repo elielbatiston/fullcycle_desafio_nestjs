@@ -1,0 +1,25 @@
+services:
+  app_go:
+    image: batistondeoliveira/fullcycle_desafio_grpc:latest
+    ports:
+      - 50051:50051
+    networks:
+      - desafio_network
+      
+  app_nestjs:
+    image: batistondeoliveira/fullcycle_desafio_nestjs:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node/app
+    depends_on:
+      - app_go
+
+    networks:
+      - desafio_network
+    
+networks:
+  desafio_network:
+    driver: bridge
+    ipam:
+      driver: default  
