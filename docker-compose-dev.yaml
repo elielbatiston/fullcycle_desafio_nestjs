@@ -7,14 +7,11 @@ services:
       - desafio_network
       
   app_nestjs:
-    image: batistondeoliveira/fullcycle_desafio_nestjs:latest
+    build: .    
     ports:
-      - 3000:3000
+      - 3000:3000      
     volumes:
       - .:/home/node/app
-    depends_on:
-      - app_go
-
     networks:
       - desafio_network
     
