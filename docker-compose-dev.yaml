@@ -6,8 +6,8 @@ services:
     networks:
       - desafio_network
       
-  app_nestjs:
-    build: .    
+  app_nestjs:  
+    build: ./Dockerfile.dev
     ports:
       - 3000:3000      
     volumes:
