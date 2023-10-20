@@ -24,8 +24,9 @@ docker-compose up -d
 
 ## Como testar:
 
-Utilize o arquivo api.http do diretório raiz deste projeto para realizar os testes na aplicação
+Abra o projeto no VSCode e utilize o arquivo api.http do diretório raiz do projeto para realizar os testes na aplicação.
 
 ## OBSERVAÇÃO:
 
-Está documentação leva em conta que você tem o docker e docker compose instalado na sua máquina
+Está documentação leva em conta que você tem o docker, docker compose e vscode instalado na sua máquina.
+
